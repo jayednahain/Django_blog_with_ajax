@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+
+{% endblock title %}
+
+
+
+{% block script %}
+
+    <script src="{% static 'posts/js/main.js' %}" defer></script>
+    <script src="{% static 'posts/js/spinner.js' %}" defer></script>
+
+{% endblock script %}
+
+
+
+
+
+{% block body %}
+
+{#{{ post_data }}#}
+    <hr>
+{#    <div id="spinner_div" class="text-center">#}
+{#        <div class="spinner-border" role="status">#}
+{##}
+{#        </div>#}
+{#    </div>#}
+{#    <hr>#}
+{#    <h1 id="test_js"></h1>#}
+{#    <h1 id="test_ajax"></h1>#}
+{#    <hr>#}
+
+    {# initial data box #}
+    <div id="post_box" ></div>
+
+
+    <div id="spinner_div" class="text-center">
+        <div class="spinner-border" role="status">
+
+        </div>
+    </div>
+
+
+    {#loaded data box this will perform after clicking the box #}
+    <div class="" id="end_box">
+        <button class="btn btn-primary" id="load_button" >Click for more</button>
+    </div>
+
+
+{#    <hr>#}
+{#    <p id="for_each_demo"></p>#}
+{#    <hr>#}
+
+
+
+{% endblock body %}
